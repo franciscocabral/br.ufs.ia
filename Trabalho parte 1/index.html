@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/bootstrap.min.css">
+    <link href="css/bootstrap-theme.min.css">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #myMap {
+            width: 625px;
+            height: 625px;
+            border: 1px dashed black;
+            float: left;
+        }
+
+        .myPos {
+            width: 25px;
+            height: 25px;
+            float: left;
+            color: black;
+            font-size: 9px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .line {
+            display: block;
+            height: 25px;
+        }
+
+        .myInfo {
+            float: right;
+            width: 625px;
+            height: 625px;
+            border: 1px dashed black;
+        }
+        #buttons{
+            float: right;
+        }
+        #divResults{
+            float: right;
+        }
+        #results {
+            float: right;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+
+</head>
+<body>
+<div id="myMap">
+
+</div>
+<div id="myInfo">
+    <div id="buttons">
+        <input type="button" id="buscaEmLargura" value="Busca em Largura">
+        <input type="button" id="buscaEmProfundidade" value="Busca em Profundidade">
+        <br>
+        <input type="button" id="buscaAEstrelaEuclidiana" value="Busca A* Euclidiana">
+        <input type="button" id="buscaAEstrelaManthattan" value="Busca A* Manhattan">
+        <input type="button" id="limpar" value="Limpar">
+        <br>
+        Inicio: <input type="number" id="inix" value="0" style="width: 40px;"/>x
+        <input type="number" id="iniy" value="0" style="width: 40px;"/>y
+        <label><input type="radio" checked name="map" value="0"> Mapa1</label> <label><input name="map" type="radio" value="1"> Mapa2</label>
+        <br>
+        Final: <input type="number" id="fimx" value="23" style="width: 40px;"/>x
+        <input type="number" id="fimy" value="23" style="width: 40px;"/>y
+        <input type="button" id="change" value="Trocar">
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <div id="divResults">
+        <textarea id="results"></textarea>
+    </div>
+</div>
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/buscaAEstrelaEuclidiana.js"></script>
+<script src="js/buscaAEstrelaManhattan.js"></script>
+<script src="js/buscaLargura.js"></script>
+<script src="js/buscaProfundidade.js"></script>
+</body>
+</html>

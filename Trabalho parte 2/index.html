@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/bootstrap.min.css">
+    <link href="css/bootstrap-theme.min.css">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #myMap {
+            width: 600px;
+            height: 600px;
+            border: 1px dashed black;
+            float: left;
+        }
+
+        .myPos {
+            width: 60px;
+            height: 60px;
+            float: left;
+            color: black;
+            font-size: 9px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .line {
+            display: block;
+            height: 60px;
+        }
+
+        .myInfo {
+            float: right;
+            width: 600px;
+            height: 600px;
+            border: 1px dashed black;
+        }
+        #buttons{
+            float: right;
+        }
+        #divResults{
+            float: right;
+        }
+        #results {
+            float: right;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+
+</head>
+<body>
+<div id="myMap">
+
+</div>
+<div id="myInfo">
+    <div id="buttons">
+        <input type="button" id="algoritmoGenetico" value="Algoritmo Genetico">
+        <input type="button" id="algoritmoGeneticoLimitado" value="Algoritmo Genetico População Limitada">
+        <input type="button" id="limpar" value="Limpar">
+        <br>
+        Numero de rainhas: <input type="number" id="n" min="4" value="4" style="width: 40px;"/>
+        <br>
+        <input type="button" id="change" value="Trocar">
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <div id="divResults">
+        <textarea id="results"></textarea>
+    </div>
+</div>
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/algoritmoGenetico.js"></script>
+</html>
